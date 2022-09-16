@@ -2,11 +2,11 @@
     background-color:lightsteelblue;
     display: flex;
     font-size: 1.5rem;
+    position: fixed;
 }
 
-.news{
-    border-style: solid;
-
+.news p{
+    background-color: darkgrey;
 }
 
 #subnews{
