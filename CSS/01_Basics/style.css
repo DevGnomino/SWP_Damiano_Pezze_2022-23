@@ -1,0 +1,14 @@
+.menu{
+    background-color:lightsteelblue;
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.news{
+    border-style: solid;
+
+}
+
+#subnews{
+    color: aquamarine;
+}
