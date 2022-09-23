@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var</title>
+    <link rel="stylesheet" href="../cssreset.css">
+    <style>
+        *{
+            font-size: 18px;
+            --font-size-big:1.5rem;
+            --font-size-medium:1.3rem;
+            --font-size-normal:0.6rem;
+            --main-color:green;
+        }
+
+        .header{
+            font-size: var(--font-size-big);
+            font-weight: 800;
+        }
+
+        .subheader{
+            font-size: var(--font-size-medium);
+            background-color: var(--main-color);
+        }
+
+        .main{
+            font-size: var(--font-size-normal);
+        }
+
+        .sidebar{
+            font-size: var(--font-size-normal);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">header</div>
+    <div class="subheader">subheader</div>
+    <div class="main">main</div>
+    <div class="sidebar">sidebar</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>units</title>
+    <link rel="stylesheet" href="../cssreset.css">
+    <style>
+        *{
+            font-size: 20px;
+        }
+
+        div{
+            height:50px;
+            background-color: aquamarine;
+        }
+
+        .container1{
+            width: 50%;
+            font-size: 0.7em;
+        }
+        
+        .container2{
+            width: 50vw; /* viewport width */
+            height: 50vh; /* viewport height */
+            font-size: 1.2em;
+        }
+
+        .main{
+            background-color: aqua;
+            height: 500px;
+            width: 200px;
+            font-size: 1.5rem; /* root */
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        hallo
+        <div class="container1">
+            container 1 %
+        </div>
+        <div class="container2">
+            container 2 vw
+        </div>    
+    </div>
+</body>
+</html>

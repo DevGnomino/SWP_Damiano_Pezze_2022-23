@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <link rel="stylesheet" href="../cssreset.css">
+    <style>
+        .box {
+            background-color: beige;
+            height: 100px;
+            padding: 10px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-auto-rows: minmax(100px, auto);
+            column-gap: 1px;
+            row-gap: 1px;
+        }
+
+        .item1 {
+            grid-column-start: span 2;
+        }
+
+        .item6 {
+            grid-column-start: span 3;
+        }
+
+        @media (min-width: 600px){
+            body{
+                background-color: blueviolet;
+            }
+            .container {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-auto-rows: minmax(100px, auto);
+            column-gap: 1px;
+            row-gap: 1px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box item1">eins</div>
+        <div class="box item2">zwei</div>
+        <div class="box item3">drei</div>
+        <div class="box item4">vier</div>
+        <div class="box item5">fünf</div>
+        <div class="box item6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit reprehenderit iste
+            aspernatur reiciendis ullam nemo alias animi architecto similique quas unde cumque deleniti, adipisci ex
+            porro corrupti tenetur, esse at illum eum amet? Corrupti dolor soluta vitae accusamus recusandae dicta magni
+            inventore ducimus cum quisquam, facere, sequi fugit iusto assumenda nihil aut, saepe odit sunt ea excepturi
+            perferendis minus similique? Harum, rem minus tempora, eligendi ullam ut deserunt quasi libero ipsa a odio
+            accusantium enim omnis quam quisquam soluta dignissimos praesentium, autem sed mollitia fugiat optio! Error
+            voluptatibus, provident laboriosam autem quis voluptatem delectus nobis quisquam, accusantium magnam
+            corporis possimus.</div>
+    </div>
+</body>
+
+</html>
