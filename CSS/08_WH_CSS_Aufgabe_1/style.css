@@ -1,0 +1,13 @@
+*{
+    border-style: solid;
+}
+
+.menu div{
+    background-color: greenyellow;
+    height: 20px;
+    width: 40px;
+}
+
+.menu{
+    margin: 40px;
+}
