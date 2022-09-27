@@ -1,0 +1,55 @@
+*{
+    margin:0;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.lefttop, .righttop{
+    position: relative;
+    background-color: lightblue;
+    width: 300px;
+    height: 300px;
+}
+
+.lefttopchild, .righttopchild{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.lefttopchild{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.righttopchild{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.bottomright{    
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    background-color: rgb(146, 224, 109);
+    width: 180px;
+    height: 180px;
+}
+
+.bottomrightchild{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    background-color: black;
+    width: 60px;
+    height: 60px;
+}

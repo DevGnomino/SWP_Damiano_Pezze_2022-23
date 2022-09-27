@@ -1,0 +1,59 @@
+*{
+    --medium-width: 30vh;
+    --medium-height: 30vh;
+    --small-width: 5vh;
+    --small-height: 5vh;
+    --bottomchild-width: 10vh;
+    --bottomchild-height: 10vh;
+    --bottomchild-color: black;
+    --bottom-width: 45vh;
+    --bottom-height: 45vh;
+
+    margin: 0;
+    border-style: none;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.flexbox div{
+    border-style: solid;
+}
+
+.medium{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(167, 224, 116);
+    width: var(--medium-width);
+    height: var(--medium-height);
+}
+
+.small{
+    width: var(--small-width);
+    height: var(--small-height);
+}
+
+.bottomright{
+    background-color: lightblue;
+    width: var(--bottom-width);
+    height: var(--bottom-height);
+}
+
+.bottomchild1{
+    width: var(--bottomchild-width);
+    height: var(--bottomchild-height);
+    background-color: var(--bottomchild-color);
+
+}
+
+.bottomchild2{
+    width: var(--bottomchild-width);
+    height: var(--bottomchild-height);
+    background-color: var(--bottomchild-color);
+
+}
+
