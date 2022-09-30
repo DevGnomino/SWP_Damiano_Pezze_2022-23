@@ -1,0 +1,70 @@
+*{
+    --split-width: 50%;
+    --split-height: 75%;
+    --bottom-width: 100%;
+    --bottom-height: 25%;
+    --bigbox-side: 400px;
+    --bottomleft-side: 250px;
+    --bottomleftchild-side: 45%;
+    --smallchild-side: 100px;
+
+    margin: 0;
+}
+
+.bigbox{
+    width: var(--bigbox-side);
+    height: var(--bigbox-side);
+    margin: 80px;
+    position: relative;
+    display: flex;
+    border-style: solid;
+}
+
+.split{
+    width: var(--split-width);
+    height: var(--split-height);
+}
+
+.left{
+    background-color: rgb(188, 234, 109);
+}
+
+.right{
+    background-color: lightblue;
+    display: flex;
+    justify-content: end;
+}
+
+.smallchild{
+    width: var(--smallchild-side);
+    height: var(--smallchild-side);
+    background-color: black;
+    right: 0;
+}
+
+.bottom{
+    width: var(--bottom-width);
+    height: var(--bottom-height);
+    background-color: orange;
+    position: absolute;
+    bottom: 0;
+}
+
+.bottomleft{
+    width: var(--bottomleft-side);
+    height: var(--bottomleft-side);
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomleft ,.bottomleft > * { /*VERERBUNG*/
+    border-style: solid;
+}
+
+.bottomleftchild{
+    width: var(--bottomleftchild-side);
+    height: var(--bottomleftchild-side);
+    background-color: rgb(247, 183, 65);
+}

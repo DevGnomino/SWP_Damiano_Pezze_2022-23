@@ -1,0 +1,21 @@
+*{
+    --body-color: rgb(128, 128, 128);
+    --wrapper-color: rgb(255, 255, 255);
+    --header-color: rgb(255, 0, 0);
+    --logodiv-color: rgb(255, 0, 0);
+    --logodiv2-color: rgb(255, 0, 0);
+    --logodiv3-color: rgb(255, 0, 0);
+    --menu-color: rgb(146, 78, 78);
+}
+
+body{
+    font-family: "ORF ON",Arial,Helvetica,Lucida Sans Unicode,Lucida Grande,sans-serif;
+    font-feature-settings: "liga", "kern";
+
+    margin: 0;
+    background-color: var(--body-color);
+}
+
+.wrapper{
+    background-color: var(--wrapper-color);
+}

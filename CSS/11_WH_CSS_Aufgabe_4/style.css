@@ -1,0 +1,73 @@
+*{
+    --medium-width: 23vh;
+    --medium-height: 23vh;
+    --small-width: 7vh;
+    --small-height: 7vh;
+    --topleft-width: 60vh;
+    --topleft-height: 60vh;
+    --middlechild-width: 15vh;
+    --middlechild-height: 15vh;
+
+    margin: 0;
+}
+
+div{
+    border-style: solid;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 5vh;
+    padding: 5vh;
+}
+
+
+.medium{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(167, 224, 116);
+    width: var(--medium-width);
+    height: var(--medium-height);
+    margin-left: 5vh;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+}
+
+.small{
+    border-style: none;
+    background-color: rgb(233, 93, 33);
+    width: var(--small-width);
+    height: var(--small-height);
+    position: relative;
+}
+
+.topleft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--topleft-width);
+    height: var(--topleft-height);
+    background-color: rgb(138, 202, 242);
+    position: absolute;
+    top: 0;
+}
+
+.middlechild{
+    width: var(--middlechild-width);
+    height: var(--middlechild-height);
+    background-color: rgb(15, 130, 218);
+}
+
+.cornerchild{
+    width: var(--medium-width);
+    height: var(--medium-height);
+    background-color: rgb(228, 143, 236);
+    position: absolute;
+    right: -10vh;
+    bottom: -10vh;
+    z-index: -1;
+}
