@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.836" height="17" viewBox="0 0 14.836 17">
+  <g id="bell" transform="translate(-26 -22.5)">
+    <g id="Gruppe_573" data-name="Gruppe 573" transform="translate(26 22.5)">
+      <g id="Gruppe_572" data-name="Gruppe 572" transform="translate(0 0)">
+        <path id="Pfad_427" data-name="Pfad 427" d="M32.027,24.53a5.565,5.565,0,0,0-4.173,5.388v3.709a.619.619,0,0,1-.618.619,1.236,1.236,0,1,0,0,2.473H39.6a1.236,1.236,0,1,0,0-2.473.617.617,0,0,1-.618-.619V29.918a5.565,5.565,0,0,0-4.173-5.388v-.639a1.391,1.391,0,1,0-2.782,0Zm-.773,12.807h4.327a2.164,2.164,0,0,1-4.327,0Z" transform="translate(-26 -22.5)" fill="#fff" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>
