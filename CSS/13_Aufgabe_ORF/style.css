@@ -81,6 +81,7 @@ a:hover {
 
 .logodiv > a:hover{
     text-decoration: none;
+    opacity: 100%;
 }
 
 .logo{
@@ -204,10 +205,10 @@ h4{
     margin-right: 8px;
   }
 
-.up {
+/* .up {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
-  }
+  } */
   
   .down {
     transform: rotate(45deg);
