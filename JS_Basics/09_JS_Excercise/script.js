@@ -25,11 +25,11 @@ console.log(result1);
 console.log("------------");
 
 let result2 = 0;
-for (let i = 0; i <= 100; i= i + 2) {
+for (let i = 0; i <= 100; i = i + 2) {
     result2 += i;
 }
 console.log(result2);
-
+console.log("------------");
 
 // 3. Versuche mit einer for/while Schleife den Anfangsbuchstaben deines Namens auszugeben, z.B.:
 // XXXX
@@ -37,3 +37,20 @@ console.log(result2);
 // X   XX
 // X   X
 // XXXX
+let tempStr = "";
+
+for (let row = 0; row < 5; row++) {
+    tempStr = "";
+    for (let col = 0; col < 6; col++) {
+        if (col == 0 ||
+            ((row == 0 || row == 4) && (col == 0 || col == 1 || col == 2 || col == 3)) ||
+            ((row == 1 || row == 3) && (col == 0 || col == 4)) ||
+            (row == 2 && (col == 0 || col == 4 || col == 5))) 
+        {
+            tempStr += "X";
+        } else {
+            tempStr += " ";
+        }
+    }
+    console.log(tempStr);
+}
