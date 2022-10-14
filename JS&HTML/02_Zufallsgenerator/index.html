@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zufallsgenerator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Random Number Generator</h1><br>
+    <div class="wrapper">
+        <div class="inputDiv" id="inputDiv">
+            <input type="text" name="min" id="min" class="input" placeholder="Minimum Number">
+            <input type="text" name="max" id="max" class="input" placeholder="Maximum Number">
+        </div>
+        <div class="btnDiv" id="btnDiv">
+            <input type="button" value="Generate" id="add" class="input" onclick="generate()">
+        </div>
+    </div>
+    <div class="resultDiv" id="resultDiv">
+        <h3>Your random number: </h3>
+        <h3 id="result"></h3>
+    </div>
+</body>
+
+</html>
