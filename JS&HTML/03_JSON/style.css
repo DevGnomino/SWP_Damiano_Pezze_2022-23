@@ -1,0 +1,38 @@
+body {
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: grey;
+    color: whitesmoke;
+    width: 45vw;
+    margin: 2vh;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.second>img {
+    width: 15vw;
+    height: 15vw;
+    object-fit: cover;
+    overflow: hidden;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 10px;
+}
+
+
+.card>div {
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
