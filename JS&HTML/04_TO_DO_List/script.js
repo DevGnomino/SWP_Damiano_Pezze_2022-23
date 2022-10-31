@@ -9,6 +9,10 @@ const taskArr = [];
 
 document.getElementById("addTask").addEventListener("click", function () {
     addTask();
+    //Clear Textfields
+    document.getElementById("txtTask").value = "";
+    document.getElementById("txtResponsible").value = "";
+    document.getElementById("txtTask").focus();
 });
 
 
@@ -32,6 +36,13 @@ function checkTask(element) {
     taskArr[readIndex].isDone = isChecked;
 }
 
+function deleteTask(element) {
+    let readIndex = element.attributes["data-index"].value;
+
+    taskArr.splice(readIndex, 1);
+    printTasklist();
+}
+
 function getHTMLTasks() {
     let taskTexts = "";
     let index = 0;
@@ -41,10 +52,12 @@ function getHTMLTasks() {
         if (element.isDone) { checked = "checked"; }
         else { checked = ""; }
 
-        taskTexts += "<li><div class='ListElement'><div class='ListElementCheck'>" 
-            + "<input onClick='checkTask(this)' name='checkbox' type='checkbox' data-index='" 
-            + index + "' " + checked + "></div><div class='ListElementContent'>" + element.title 
-            + "<br>-" + element.responsible + "</div></div></li>";
+        taskTexts += "<li><div class='ListElement'><div class='ListElementCheck'>"
+            + "<input onClick='checkTask(this)' name='checkbox' type='checkbox' data-index='"
+            + index + "' " + checked + "></div><div class='ListElementContent'>" + element.title
+            + "<br>- " + element.responsible + "</div><div class='ListElementDelete'>"
+            + "<img src='https://cdn-icons-png.flaticon.com/512/860/860829.png' alt='delete'"
+            + "onClick='deleteTask(this)' role='button' data-index='" + index + "'/></div></div></li>";
 
         index++;
     });
