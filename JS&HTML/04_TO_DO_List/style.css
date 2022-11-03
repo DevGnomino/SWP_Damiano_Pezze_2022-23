@@ -27,17 +27,13 @@ ul {
 
 .ListElementCheck {
     padding-right: 3vh;
-    padding-left: 3vh;
+    padding-left: 2vh;
 }
 
 .ListElementContent {
     text-align: left;
     padding: 1vw;
-    width: 155px;
-}
-
-.ListElementDelete {
-
+    width: 135px;
 }
 
 .ListElementDelete > img {

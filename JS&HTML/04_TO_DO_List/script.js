@@ -20,9 +20,13 @@ function addTask() {
     let taskText = document.getElementById("txtTask").value;
     let taskResponsible = document.getElementById("txtResponsible").value;
 
-    let taskToAdd = { title: taskText, responsible: taskResponsible };
-    taskArr.push(taskToAdd);
-    printTasklist();
+    if (taskText == "" || taskResponsible == "") {
+        alert("Please enter both fields!");
+    } else {
+        let taskToAdd = { title: taskText, responsible: taskResponsible };
+        taskArr.push(taskToAdd);
+        printTasklist();
+    }
 }
 
 function printTasklist() {
