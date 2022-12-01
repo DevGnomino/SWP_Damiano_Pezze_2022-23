@@ -1,9 +1,15 @@
+import Tank from "./Tank.js";
+
 export default class Turbine {
-    constructor(getIntensity) {
-        this.getIntensity = 0;
+    constructor(Intensity) {
+        this.Intensity = 0;
     }
 
-    accelerate(intensity) {
+    accelerate(speed) {
+        this.Intensity += speed / 80;
+    }
 
+    getIntensity(){
+        return this.Intensity;
     }
 }

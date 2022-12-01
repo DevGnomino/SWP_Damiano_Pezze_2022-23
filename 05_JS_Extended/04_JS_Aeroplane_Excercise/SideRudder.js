@@ -1,9 +1,9 @@
 export default class SideRudder {
-    constructor(getStatus) {
-        this.getStatus = 0;
+    constructor(Status) {
+        this.Status = 0;
     }
 
     move(percentage) {
-
+        this.Status += percentage;
     }
 }

@@ -1,5 +1,5 @@
 export default class Tank {
-    constructor(getStatus) {
-        this.getStatus = 0;
+    constructor(Status) {
+        this.Status = 1000;
     }
 }
