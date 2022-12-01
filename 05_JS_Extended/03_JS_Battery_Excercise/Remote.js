@@ -13,7 +13,7 @@ export default class Remote {
     }
 
     turnOff() {
-        if (this.isOn === true) {
+        if (this.isOn) {
             this.isOn = false;
             console.log("The Remote has been turned off");
         } else {
@@ -22,7 +22,7 @@ export default class Remote {
     }
 
     turnOn() {
-        if (this.isOn === false) {
+        if (!this.isOn) {
             this.isOn = true;
             this.battery1.chargingStatus -= 5;
             this.battery2.chargingStatus -= 5;

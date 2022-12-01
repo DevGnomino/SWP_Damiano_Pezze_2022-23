@@ -51,7 +51,7 @@ export default class Aeroplane {
             console.log("The plane is steering " + this.siderudder.Status + "% to the right");
         }
 
-        if (this.elevator.Status == 0) {
+        if (this.elevator.Status === 0) {
             console.log("The plane is not changing altitude");
         } else if (this.elevator.Status < 0) {
             console.log("The plane is steering " + (this.elevator.Status) * (-1) + "% down");
