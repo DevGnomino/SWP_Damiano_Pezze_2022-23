@@ -1,0 +1,20 @@
+.list>ul{
+    padding: 0; 
+}
+
+.list>ul>li {
+    text-align: left;
+    width: 150px;
+    padding: 15px;
+    background-color: rgb(22, 147, 141);
+    color: white;
+    border-radius: 5px;
+    list-style: none;
+    list-style-position: inside;
+    margin: 3px;
+}
+
+.list>ul>li:hover {
+    background-color: azure;
+    color: black;
+}

@@ -1,0 +1,25 @@
+.card {
+    width: 250px;
+    height: 350px;
+    font-size: 0.9em;
+    color: black;
+    text-align: left;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
+    margin: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    line-height: 0.5em;
+}
+
+.card>img {
+    position: relative;
+    left: -20px;
+    width: 250px;
+    height: 250px;
+}
+
+p{
+    font-size: 0.7em;
+}
+

@@ -1,0 +1,19 @@
+.isOff:hover,.isOn:hover{
+    background-color: rgba(209, 209, 209, 0.42);
+    cursor: pointer;
+}
+
+.isOn{
+    border-style: solid;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 5px;
+    background-color: rebeccapurple;
+}
+
+.isOff{
+    border-style: solid;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 5px;
+}
